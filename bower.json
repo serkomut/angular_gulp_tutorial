@@ -1,12 +1,12 @@
 {
-  "name": "AngularJS-Gulp-Browserify-Starter",
+  "name": "angular_gulp_tutorial",
   "description": "Base AngularJS application with gulp and browserify",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/goodbomb/angular-gulp-browserify-starter"
+    "url": "https://github.com/serkomut/angular_gulp_tutorial"
   },
-  "authors": "Ben Scott <bscott@tekalstudios.com>",
+  "authors": "Serol Guzel <serkomut@gmail.com>",
   "private": false,
   "devDependencies": {
     "angular-mocks": "~1.4.2"
