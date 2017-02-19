@@ -1,8 +1,8 @@
 'use strict';
 //homeRoutes.$inject = ['$stateProvider'];
 module.exports = function ($stateProvider) {
-    var home = {
-        name: 'home', // state name
+    $stateProvider.state("home",
+    {
         url: '/', // url path that activates this state
         template: require("./home.html"),
         controller: function ($scope) {
@@ -14,7 +14,5 @@ module.exports = function ($stateProvider) {
             pageTitle: 'Home', // set the title in the <head> section of the index.html file
             pageDescription: 'Meta Description goes here' // meta description in <head>
         }
-    };
-
-    $stateProvider.state(home);
+    });
 };

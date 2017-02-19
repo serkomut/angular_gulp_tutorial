@@ -1,7 +1,7 @@
 // This config file does not define any routes.
 // For module-level route definitions, use the *Routes.js files found in the module folders.
 
-//'use strict';
+'use strict';
 
 //appConfig.$inject = ['$urlRouterProvider', '$locationProvider'];
 module.exports = function($urlRouterProvider, $locationProvider) {
