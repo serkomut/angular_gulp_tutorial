@@ -1,8 +1,8 @@
 /*jshint expr: true*/
 
 'use strict';
-
-describe('HomeController', function() {
+var MainCtrl = require("./controller");
+describe('MainController', function() {
 
     var ctrl, scope;
 
@@ -12,7 +12,7 @@ describe('HomeController', function() {
 
         angular.mock.inject(function($controller, $rootScope) {
             scope = $rootScope.$new();
-            ctrl = $controller('HomeCtrl', {
+            ctrl = $controller('MainCtrl', {
                 $scope: scope
             });
         });
@@ -21,6 +21,7 @@ describe('HomeController', function() {
 
     it('should exist', function() {
         expect(ctrl).to.not.be.undefined;
+        expect(scope.test).to.be.null;
     });
 
 });

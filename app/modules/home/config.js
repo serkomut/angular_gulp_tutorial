@@ -1,11 +1,13 @@
 'use strict';
-
-function homeRoutes($stateProvider) {
-
+//homeRoutes.$inject = ['$stateProvider'];
+module.exports = function ($stateProvider) {
     var home = {
         name: 'home', // state name
         url: '/', // url path that activates this state
-        template: '<div home-view></div>', // generate the Directive "homeView" - when calling the directive in HTML, the name must not be camelCased
+        template: require("./home.html"),
+        controller: function ($scope) {
+            $scope.testVar = 'We are up and running using a required module!';
+        },
         data: {
             moduleClasses: 'page', // assign a module class to the <body> tag
             pageClasses: 'home', // assign a page-specific class to the <body> tag
@@ -15,8 +17,4 @@ function homeRoutes($stateProvider) {
     };
 
     $stateProvider.state(home);
-
-}
-
-homeRoutes.$inject = ['$stateProvider'];
-module.exports = homeRoutes;
+};
